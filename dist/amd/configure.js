@@ -144,8 +144,8 @@ define(['exports', 'aurelia-dependency-injection', 'aurelia-path', 'aurelia-load
                     if (this.environmentExists() && this.obj[this.environment][key]) {
                         returnVal = this.obj[this.environment][key];
                     } else if (this.cascade_mode && this.obj[key]) {
-                            returnVal = this.obj[key];
-                        }
+                        returnVal = this.obj[key];
+                    }
 
                     return returnVal;
                 }

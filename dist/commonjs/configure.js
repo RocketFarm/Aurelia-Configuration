@@ -127,8 +127,8 @@ var Configure = exports.Configure = (_dec = (0, _aureliaDependencyInjection.inje
                 if (this.environmentExists() && this.obj[this.environment][key]) {
                     returnVal = this.obj[this.environment][key];
                 } else if (this.cascade_mode && this.obj[key]) {
-                        returnVal = this.obj[key];
-                    }
+                    returnVal = this.obj[key];
+                }
 
                 return returnVal;
             }
